@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+
+ <style>
+
+body { background-image: url("https://cdn.pixabay.com/photo/2016/08/11/23/55/redwood-national-park-1587301_960_720.jpg");
+}
+
+p { font-family:'Trebuchet MS'; font-size:larger; color:mintcream; height: 200px; width: 700px; line-height:
+ 2.0; margin-bottom: 200px }
+
+ /* image holding the image and the text */
+.image {
+  position:relative;
+  left:200px;
+}
+
+/* Centered text */
+.text {
+  position:absolute;
+  left:0px;
+  top:0px;
+ font-size:x-large;
+  color:black;
+  text-alignment:center;
+}
+
+</style>
+
+</head>
+
+<body >
+
+<h1 style= color:deeppink; text-alilgn:'center';> About me "Srikala Gajjala" </h1>
+
+<p> 
+    Name(s): Srikala, Srilu, Kala <br> 
+    From: India <br> 
+    Education: Masters in Biochemistrhy <br> 
+    Institution: 
+    <a href ="http://www.nagarjunauniversity.ac.in/" target = "_blank" > Acharya Nagarjuna University </a> <br> 
+    Favourite Hobbies: Reading, Movies and Web browsing <br> 
+    Currently living in: 
+  <a href = 'https://sweden.se/' target="_blank" title='sweden'>
+  <img src='https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg' 
+    alt='Sweden' height=100; width=100; > </a>  <br> 
+    
+    currently pursuing a course in computer programming in 
+    Komvux adult education school.
+
+</p>
+
+<div class="image">
+
+  <a href='https://komvux.helsingborg.se/' target='_blank' title='Komvux vuxenutbildningen' >
+<img src="https://pano.enirocdn.com/panorender/render?lon=12.7010307&lat=56.0366402&w=728&h=315"
+alt='komvux vuxenutbildningen' height='500' width='700'> 
+   </img>
+</a> 
+
+<p class="text"> click on the image to know more about komvux </p>
+
+</div>   <br>
+
+<a href="https://www.w3schools.com" target="_parent" style= font-size:x-large> Link to the HTML Tutorial</a>  <br>
+
+<a href="https://github.com/" target="_blank" style= font-size:x-large; color:white>Link to github</a>
+
+<p><a href=mailto:dimitrij@aleshkov.com><button>contact</button></a> our program instructor 'Dimitri Aleshkov'
+</p>
+
+<form target="_self">
+  <input type="text" id="work experience" placeholder= "work experience"><br><br>
+  <input type="text" id="references" placeholder= "references"><br><br>
+  <input type="text" id="contacts"  placeholder= "contacts"><br><br>
+  <button onclick = "myfunction(document.getElementById('work experience').value, document.getElementById('references').value, 
+  document.getElementById('contacts').value)"> submit </button>
+</form> 
+
+<p id = 'demo'></p>
+
+<script>
+
+//class name called details
+class details {
+  constructor(a, b, c) {
+    this.WORKEXPERIENCE = a;
+    this.REFERENCES = b;
+    this.CONTACTS = c;
+  }
+};
+
+//function definiton for myfunction()
+function myfunction(a, b, c) {
+  var Furtherdetails = new details(a,b,c);
+
+  document.getElementById('demo').innerHTML = Furtherdetails.WORKEXPERIENCE + Furtherdetails.REFERENCES + Furtherdetails.CONTACTS;
+}
+</script>
+
+      </body>
+</html>
