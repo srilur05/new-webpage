@@ -71,24 +71,26 @@ alt='komvux vuxenutbildningen' height='500' width='700'>
 <p><a href=mailto:dimitrij@aleshkov.com><button>contact</button></a> our program instructor 'Dimitri Aleshkov'
 </p>
 
-<form target="_self">
+<form target="_blank">
   <input type="text" id="work experience" placeholder= "work experience"><br><br>
   <input type="text" id="references" placeholder= "references"><br><br>
   <input type="text" id="contacts"  placeholder= "contacts"><br><br>
   <button onclick = "myfunction(document.getElementById('work experience').value, document.getElementById('references').value, 
-  document.getElementById('contacts').value)"> submit </button>
+           document.getElementById('contacts').value)"> submit </button>
 </form> 
 
 <p id = 'demo'></p>
 
 <script>
 
+var a,b,c;
+
 //class name called details
 class details {
   constructor(a, b, c) {
-    this.WORKEXPERIENCE = a;
-    this.REFERENCES = b;
-    this.CONTACTS = c;
+    this.WORKEXPERIENCE = 'a';
+    this.REFERENCES = 'b';
+    this.CONTACTS = 'c';
   }
 };
 
