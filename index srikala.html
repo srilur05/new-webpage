@@ -26,8 +26,34 @@ p { font-family:'Trebuchet MS'; font-size:larger; color:mintcream; height: 200px
   color:black;
   text-alignment:center;
 }
-
 </style>
+
+<script>
+
+var a,b,c;
+
+//class name called details
+/*class details {
+  constructor(a, b, c) {
+    this.WORKEXPERIENCE = 'a';
+    this.REFERENCES = 'b';
+    this.CONTACTS = 'c';
+  }
+};
+
+//function definiton for myfunction()
+function myfunction(a, b, c) {
+  var Furtherdetails = new details(a,b,c); 
+  } */
+
+  function myfunction() {
+    
+  document.getElementById('demo').innerHTML = document.getElementById('work experience').value + document.getElementById('references').value +
+                                               document.getElementById('contacts').value;
+  }
+
+</script>
+
 
 </head>
 
@@ -71,36 +97,14 @@ alt='komvux vuxenutbildningen' height='500' width='700'>
 <p><a href=mailto:dimitrij@aleshkov.com><button>contact</button></a> our program instructor 'Dimitri Aleshkov'
 </p>
 
-<form target="_blank">
+<form>
   <input type="text" id="work experience" placeholder= "work experience"><br><br>
   <input type="text" id="references" placeholder= "references"><br><br>
   <input type="text" id="contacts"  placeholder= "contacts"><br><br>
-  <button onclick = "myfunction(document.getElementById('work experience').value, document.getElementById('references').value, 
-           document.getElementById('contacts').value)"> submit </button>
+  <button onclick = "myfunction()"> submit </button>
 </form> 
 
 <p id = 'demo'></p>
-
-<script>
-
-var a,b,c;
-
-//class name called details
-class details {
-  constructor(a, b, c) {
-    this.WORKEXPERIENCE = 'a';
-    this.REFERENCES = 'b';
-    this.CONTACTS = 'c';
-  }
-};
-
-//function definiton for myfunction()
-function myfunction(a, b, c) {
-  var Furtherdetails = new details(a,b,c);
-
-  document.getElementById('demo').innerHTML = Furtherdetails.WORKEXPERIENCE + Furtherdetails.REFERENCES + Furtherdetails.CONTACTS;
-}
-</script>
 
       </body>
 </html>
